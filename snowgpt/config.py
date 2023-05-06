@@ -36,7 +36,8 @@ def load_config(file_path: str) -> None:
         SNOWFLAKE_DATABASE = config['snowflake']['SNOWFLAKE_DATABASE']
         SNOWFLAKE_SCHEMA = config['snowflake']['SNOWFLAKE_SCHEMA']
         SNOWFLAKE_WAREHOUSE = config['snowflake']['SNOWFLAKE_WAREHOUSE']
-        os.environ["SNOWFLAKE_URL"] = f"snowflake://{SNOWFLAKE_USER}:{SNOWFLAKE_PASSWORD}@{SNOWFLAKE_ACCOUNT_IDENTIFIER}/{SNOWFLAKE_DATABASE}/{SNOWFLAKE_SCHEMA}?role=ASCENT_RW&warehouse={SNOWFLAKE_WAREHOUSE}"
+        SNOWFLAKE_ROLE = config['snowflake']['SNOWFLAKE_ROLE']
+        os.environ["SNOWFLAKE_URL"] = f"snowflake://{SNOWFLAKE_USER}:{SNOWFLAKE_PASSWORD}@{SNOWFLAKE_ACCOUNT_IDENTIFIER}/{SNOWFLAKE_DATABASE}/{SNOWFLAKE_SCHEMA}?role={SNOWFLAKE_ROLE}&warehouse={SNOWFLAKE_WAREHOUSE}"
 
 
 def set_api_key() -> None:
