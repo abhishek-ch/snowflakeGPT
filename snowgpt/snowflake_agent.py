@@ -24,7 +24,7 @@ def get_model(gpt_model_name:str) -> BaseOpenAI:
         case "openai":
             return OpenAI(temperature=0.7)
         case "LlamaCpp":
-            return LlamaCpp(model_path=os.environ["LLAMA_EMBEDDINGS_MODEL"], n_ctx=21000, temperature=0.5, n_threads=6, callbacks=callbacks)
+            return LlamaCpp(model_path=os.environ["LLAMA_EMBEDDINGS_MODEL"], n_ctx=21000, temperature=0.8, n_threads=6, callbacks=callbacks)
         case "GPT4All":
             return GPT4All(model=os.environ["MODEL_PATH"], n_ctx=1048, backend='gptj')
         case _default:
