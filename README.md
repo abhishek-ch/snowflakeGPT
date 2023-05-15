@@ -1,6 +1,6 @@
 # ❄️ Snowflake GPT Agent: GPT for Running Snowflake Query - Demo
 
-![Snowflake](images/snow6.png)
+![Snowflake](images/Snow7.png)
 
 ## 💾 Installation
 
