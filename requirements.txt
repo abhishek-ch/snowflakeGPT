@@ -1,0 +1,11 @@
+llama-cpp-python==0.1.49 # Latest version throws https://github.com/ggerganov/llama.cpp/pull/1305
+snowflake-connector-python
+snowflake-sqlalchemy
+pandas
+openai
+tiktoken
+langchain
+google-search-results
+langchain-serve
+pyarrow<10.1.0,>=10.0.1
+huggingface_hub

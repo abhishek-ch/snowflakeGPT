@@ -39,6 +39,11 @@ def load_config(file_path: str) -> None:
         SNOWFLAKE_ROLE = config['snowflake']['SNOWFLAKE_ROLE']
         os.environ["SNOWFLAKE_URL"] = f"snowflake://{SNOWFLAKE_USER}:{SNOWFLAKE_PASSWORD}@{SNOWFLAKE_ACCOUNT_IDENTIFIER}/{SNOWFLAKE_DATABASE}/{SNOWFLAKE_SCHEMA}?role={SNOWFLAKE_ROLE}&warehouse={SNOWFLAKE_WAREHOUSE}"
 
+    if config["model"]:
+        os.environ["MODEL_TYPE"] = config["model"]["MODEL_TYPE"]
+        os.environ["LLAMA_EMBEDDINGS_MODEL"] = config["model"]["LLAMA_EMBEDDINGS_MODEL"]
+        os.environ["MODEL_PATH"] = config["model"]["MODEL_PATH"]
+
 
 def set_api_key() -> None:
     openai.api_key = os.getenv("OPENAI_API_KEY")

@@ -135,3 +135,6 @@ config.ini
 .DS_Store
 /.DS_Store
 .commands.sh
+
+/test.py
+test.py
