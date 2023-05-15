@@ -2,6 +2,7 @@
 
 ## 💾 Installation
 
+[Snowflake](images/snow6.png)
 
 1. Navigate to the directory where the repository was downloaded
 
