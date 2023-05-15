@@ -2,6 +2,8 @@
 
 ![Snowflake](images/snow.png)
 
+Powered by [langchain](https://python.langchain.com/en/latest/index.html), [GPT4All](https://gpt4all.io/index.html) and inspired by [privategpt](https://github.com/imartinez/privateGPT)
+
 ## 💾 Installation
 
 1. Navigate to the directory where the repository was downloaded
@@ -20,6 +22,17 @@
     * If want to use config file, rename `config_template.ini` -> `config.ini` file inside the `snowdflakegpt` dir & update either Azure or OpenAI config
 
     By completing these steps, you have properly configured the API Keys for your project.
+
+
+## Pick the Model
+
+Add the model details in config.ini
+```
+[model]
+MODEL_TYPE=azure/openai/LlamaCpp/GPT4All #supports LlamaCpp or GPT4All as well
+LLAMA_EMBEDDINGS_MODEL=/path/to/ggml-model-q4_0.bin #Path to your GPT4All or LlamaCpp supported LLM
+MODEL_PATH=/path/to/ggml-gpt4all-j-v1.3-groovy.bin #Path to your LlamaCpp supported embeddings model
+```
 
 
 ## 🔧 Usage
