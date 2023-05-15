@@ -1,8 +1,8 @@
 # ❄️ Snowflake GPT Agent: GPT for Running Snowflake Query - Demo
 
-## 💾 Installation
+![Snowflake](images/snow6.png)
 
-[Snowflake](images/snow6.png)
+## 💾 Installation
 
 1. Navigate to the directory where the repository was downloaded
 
