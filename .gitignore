@@ -138,3 +138,5 @@ config.ini
 
 /test.py
 test.py
+output.txt
+/output.txt

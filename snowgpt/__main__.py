@@ -3,6 +3,7 @@ import os
 import sys
 from snowgpt.config import load_config, set_api_key
 from snowgpt.snowflake_agent import execute,verify_prompt
+import streamlit.web.bootstrap
 
 if __name__ == '__main__':
     config_file_path = 'config.ini'
@@ -15,4 +16,7 @@ if __name__ == '__main__':
     else:
         load_config(config_file_path)
 
-    execute(sys.argv[1])
+    if sys.argv[1] == 'upload':
+        streamlit.web.bootstrap.run("snowgpt/upload.py", sys.argv[0], [], [])
+    else:
+        execute(sys.argv[1])
