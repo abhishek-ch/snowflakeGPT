@@ -34,6 +34,10 @@ LLAMA_EMBEDDINGS_MODEL=/path/to/ggml-model-q4_0.bin #Path to your GPT4All or Lla
 MODEL_PATH=/path/to/ggml-gpt4all-j-v1.3-groovy.bin #Path to your LlamaCpp supported embeddings model
 ```
 
+## Uploading Data in Vector Database
+
+1. Run docker compose up
+2. Run `python -m snowgpt upload`
 
 ## 🔧 Usage
 
